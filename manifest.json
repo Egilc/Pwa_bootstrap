@@ -12,7 +12,7 @@
 "start_url" : "index.html",
 "background_color" : "#f69435",
 "display" : "standalone",
-"scope" : "/", 
+"scope" : "/sw.js", 
 "theme_color" : "#f69435",   
 "description" : "All about mortgage"
     
