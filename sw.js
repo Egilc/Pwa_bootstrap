@@ -1,5 +1,4 @@
 const STATIC_CACHE = "static";
-
 const APP_SHELL = [
   "/",
    "index.html",
@@ -17,9 +16,6 @@ const APP_SHELL = [
   
 ];
 
-
-
-
 self.addEventListener('install', (e) => {
   const cacheStatic = caches
   .open(STATIC_CACHE)
@@ -27,7 +23,7 @@ self.addEventListener('install', (e) => {
 
   e.waitUntil(cacheStatic);
 
-  
+ 
 });
 
 self.addEventListener('fetch', (e) =>{
