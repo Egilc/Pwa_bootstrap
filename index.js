@@ -30,11 +30,7 @@ Toasty();
 
 // Initialize deferredPrompt for use later to show browser install prompt.
 
- 
-
 let deferredPrompt;
-
- 
 
 window.addEventListener('beforeinstallprompt', (e) => {
   // Prevent the mini-infobar from appearing on mobile
@@ -72,9 +68,7 @@ var option = {
 function Toasty() {
 
   var toastHTMLElement = document.getElementById("EpicToast");
-
   var toastElement = new bootstrap.Toast(toastHTMLElement, option);
-
   toastElement.show();
 
 }
