@@ -4,7 +4,7 @@ let swLocation = "sw.js";
 
 //"/pwa-bootstrap-1/sw.js"
 if (navigator.serviceWorker){
-  if(window.location.href.includes("localhost")) swLocation = "/sw.js"
+  if(window.location.href.includes("localhost")) swLocation = "/"
   navigator.serviceWorker.register(swLocation);
 }
 
@@ -44,7 +44,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
   // Update UI notify the user they can install the PWA
   //showInstallPromotion();
   // Optionally, send analytics event that PWA install promo was shown.
-  console.log(`'beforeinstallprompt' event was fired.`);
+  //console.log(`'beforeinstallprompt' event was fired.`);
   const installAppButton = document.getElementById('installAppButton');
   if (installAppButton) {
 
