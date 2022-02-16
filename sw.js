@@ -25,22 +25,6 @@ self.addEventListener('install', (e) => {
 
  
 });
-
-self.addEventListener('fetch', (e) =>{
-  console.log('fectch!',e.request);
-
-e.respondWith(
-  caches
-    .match(e.request)
-    .then((res) => res || fetch(e.request))
-    .catch(console.log)
-    
-    );
-
+    }).catch(() => caches.match('/page-hors-ligne.html'))
+  );
 });
-
-
-
-
-
-
