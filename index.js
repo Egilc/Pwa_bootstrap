@@ -8,6 +8,11 @@ if (navigator.serviceWorker){
   navigator.serviceWorker.register(swLocation);
 }
 
+
+
+
+
+
 //Logic of web app
 console.log("Hello World");
 
